@@ -1,0 +1,14 @@
+---
+- name: Install Docker, Nginx, and Logrotate on AWS EC2 Instance
+  hosts: localhost
+  become: true
+  vars_files:
+    - ./vars/external_vars.yaml
+  # vars:
+  #   nginx_container_port: 8080
+  #   nginx_logs_volume: "/opt/data/nginx_logs"
+
+  roles:
+    - role: docker
+    - role: nginx
+    - role: logrotate

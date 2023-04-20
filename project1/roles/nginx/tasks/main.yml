@@ -1,0 +1,22 @@
+    - name: Create Nginx logs volume
+      docker_volume:
+        name: nginx_logs
+        driver: local
+        driver_options:
+          type: none
+          o: bind
+          device: "{{ nginx_logs_volume }}"
+
+    - name: Create Nginx container
+      docker_container:
+        name: nginx
+        image: nginx:latest
+        volumes:
+          - "{{ nginx_logs_volume }}:/var/log/nginx"
+        ports:
+          - "{{ nginx_container_port }}:80"
+        restart_policy: always
+        # log_driver: "json-file"
+        # log_options:
+        #   max-size: "100m"
+        #   max-file: "5"

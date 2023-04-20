@@ -1,0 +1,32 @@
+---
+- name: Install required packages
+  become: true
+  yum:
+    name:
+      - yum-utils
+      - device-mapper-persistent-data
+      - lvm2
+    state: present
+
+- name: Add Docker CE stable repository
+  become: true
+  yum_repository:
+    name: docker-ce-stable
+    baseurl: https://download.docker.com/linux/centos/7/$basearch/stable
+    description: Docker CE Stable - $basearch
+    gpgcheck: true
+    gpgkey: https://download.docker.com/linux/centos/gpg
+    enabled: true
+
+- name: Install Docker CE
+  become: true
+  yum:
+    name: docker-ce
+    state: present
+
+- name: Start Docker service
+  become: true
+  service:
+    name: docker
+    state: started
+    enabled: true

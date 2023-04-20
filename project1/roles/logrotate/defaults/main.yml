@@ -1,0 +1,15 @@
+---
+  logrotate_conf_dir: "/etc/logrotate.d/"
+  logrotate_scripts:
+    - name: nginx
+      log_dir: "{{ nginx_logs_volume }}"
+      log_extension: 'log'
+      options:
+        - rotate 3
+        - weekly
+        - size 100M
+        - missingok
+        - compress
+        - create 0644 nginx nginx
+      scripts:
+          postrotate: "/bin/kill -USR1 `cat /run/nginx.pid 2>/dev/null` 2>/dev/null || true"
