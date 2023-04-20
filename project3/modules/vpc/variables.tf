@@ -1,0 +1,10 @@
+variable "aws_region" {}
+variable "vpc_cidr" {}
+variable "vpc_name" {}
+variable "IGW_name" {}
+variable "Main_Routing_Table" {}
+variable "Private_Routing_Table" {}
+variable "azs" {}
+variable "environment" {}
+variable "public_cidrs" {}
+variable "private_cidrs" {}
