@@ -11,7 +11,7 @@ Install the helm chart using below command
 ```
 helm install <release-name> nginx
 ```
-* If you want to edit any configuration then set them using set as shown below
+* If you want to set any custom configuration then set it using helm --set option as shown below
 ```
 helm install <release-name> nginx \
 --set replicaCount=2 
@@ -22,7 +22,7 @@ update values.yaml < supply external file to helm install < using set override
 ```
 
 ## Testing details
-* After succesful deploy a text writeen in Notes.txt will be displayed in stdout
+* After successful deployment below text writeen in Notes.txt will be displayed in stdout
 ```
 NOTES:
 1. Get the application URL by running these commands:
@@ -31,6 +31,11 @@ NOTES:
 
   export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
   echo http://$NODE_IP:$NODE_PORT
+```
+
+* Verify deployment by list helm release 
+```
+helm list
 ```
 
 * Verify pods status
@@ -42,7 +47,7 @@ kubectl get pods
 ```
 kubectl get svc 
 ```
-* since we used NodePort Servie, the service type should be nodeport and its values should be within range 30000-32767
+* since we used NodePort Service, the service type should be **NodePort** and its values should be within range 30000-32767
 
-* Copy the nodeport value and you should access the nginx application by hitting any one of the worker nodes ip/dns name followed by nodepart
+* Copy the nodeport value and you should access the nginx application by hitting any one of the worker nodes ip/dns name followed by nodeport
 

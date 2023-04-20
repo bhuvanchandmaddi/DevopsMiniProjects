@@ -1,12 +1,12 @@
 # Ansible Roles
-This project connets to remote machines and installs docker. Then provisions a nginx container whose logs are rotated using logrotate.
+This project uses ansible for connecting to remote machines(managed by ansible controller) and installs docker,nginx container. It also installs and configures logrotate to rotate nginx container logfiles.
 
 ## Pre-requisites
 * vm or ec2-instance with ansible controller setup
-* slave nodes/remote machines with pre-installed python ,which you want to manage using ansible 
+* slave nodes/remote machines(you want to manage using ansible) with pre-installed python  
 
 ###  Ansible controller setup
-* Connect to the any linux based system where you want to install ansible controller
+* Connect to any linux based system where you want to install ansible controller
 * Create a python virtual environment and install pip
 * Install ansible using pip module
 
@@ -22,10 +22,10 @@ Created 3 ansible roles
  ![Folder structure of 3 roles](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/roles-filestructure.PNG?raw=true)
 
  * Created external file **vars/external_vars.yaml** to store all variables
- * Installed docker by invoking docker role
- * Created nginx container & bind mount of docker volume on host machine(Since we will rotate these logs)
- * Installed log rotate and confiured using logrotate role
- * config file of logrotate in 
+ * docker role execution installs docker in remote(ansible managed machines)
+ * nginx role execution creates nginx container & bind mount of docker volume on host machine(Since we will rotate these logs)
+ * logrotate role execution installs logrotate and configures it to rotate nginx container logs 
+ * config file of logrotate 
  ```
  #cat /etc/logrotate.d/nginx
 
