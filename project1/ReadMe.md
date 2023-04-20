@@ -19,7 +19,7 @@ Created 3 ansible roles
 
  Folder structure of 3 roles:
 
- ![Folder structure of 3 roles](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/images/roles-filestructure.PNG?raw=true)
+ ![Folder structure of 3 roles](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/roles-filestructure.PNG?raw=true)
 
  * Created external file **vars/external_vars.yaml** to store all variables
  * Installed docker by invoking docker role
