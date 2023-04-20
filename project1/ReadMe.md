@@ -19,7 +19,7 @@ Created 3 ansible roles
 
  Folder structure of 3 roles:
 
- ![Folder structure of 3 roles](https://example.com/cat.jpg)
+ ![Folder structure of 3 roles](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/images/roles-filestructure.PNG?raw=true)
 
 
 
