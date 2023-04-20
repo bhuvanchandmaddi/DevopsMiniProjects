@@ -3,4 +3,4 @@
 This project creates below resources using terraform in aws. It uses terraform modules for code reusability
 
 ## File structure
- ![File structure](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/modules-filestructure.PNG?raw=true)
+ ![File structure](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/modules-filestructure?raw=true)
