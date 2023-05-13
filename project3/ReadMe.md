@@ -13,18 +13,6 @@ EC2 instance
 
 Terraform should use modules for reusability 
 
-Shell script to take third most CPU & Memory consuming process, this should output to output file with the following properties 
-
-Process Name  
-
-% CPU  used  
-
-% Memory used   
-
-PORT  
-
-PID 
-
 ## AWS Basic Infra Setup Using Terraform
 
 This project creates below resources using terraform in aws. It uses terraform modules for code reusability
