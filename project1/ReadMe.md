@@ -1,5 +1,5 @@
-# Ansible Roles
-This project uses ansible for connecting to remote machines(managed by ansible controller) and installs docker,nginx container. It also installs and configures logrotate to rotate nginx container logfiles.
+# Problem statement
+Write an ansible playbook for installing nginx, docker, logrotate. Ensure nginx container is running on port 8080 on host and log rotation is cleaning the logs of stdout of nginx container once it reaches 100mb. (Separate roles should be created for the tasks mentioned inline)
 
 ## Pre-requisites
 * vm or ec2-instance with ansible controller setup
