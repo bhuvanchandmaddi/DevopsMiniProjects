@@ -1,4 +1,31 @@
-# AWS Basic Infra Setup Using Terraform
+# Problem statement
+Create a Two tier application infrastructure any cloud provider (Preferably in AWS) using Terraform, components that should be included are mentioned below 
+
+VPC  
+
+Security Group 
+
+Subnet (Public and Private) 
+
+NAT (Instance or service) 
+
+EC2 instance  
+
+Terraform should use modules for reusability 
+
+Shell script to take third most CPU & Memory consuming process, this should output to output file with the following properties 
+
+Process Name  
+
+% CPU  used  
+
+% Memory used   
+
+PORT  
+
+PID 
+
+## AWS Basic Infra Setup Using Terraform
 
 This project creates below resources using terraform in aws. It uses terraform modules for code reusability
 
