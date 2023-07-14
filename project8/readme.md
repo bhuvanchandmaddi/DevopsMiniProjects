@@ -11,7 +11,10 @@ We have already installed it in project seven, we will use that. Access that app
 * Access the nginx app from same node where default application is running and from different node on the same network using internal private just to check the connectivity
 * Login to router`s default gateway page. which can be found from **ipconfig** command
 
+![ipconfig](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/defaultgateway.jpg?raw=true)
+
 * Then create a port-forwading rule, as shown below
+![por-forwarding](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/routerconfig.jpg?raw=true)
 
 * Which means all the traffic, which comes to routers 80 port will be redirected to internal node(where we installed nginx) ip over port 80. 
 
