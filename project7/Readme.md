@@ -49,7 +49,7 @@ curl http://bmaddi-devops.com
 ```
 * You could see not secure error, if you access the site using web-browser.So we will get self-signed certificates for the dummy domain. For exact steps, refer to [article](https://devopscube.com/create-self-signed-certificates-openssl/)
 
-Note: We cannot obtain real-ssl certificates from let`s encrypt or other CA providers because we need a real domain to do that. Which we will see in project 8
+Note: We cannot obtain real-ssl certificates from let`s encrypt or other CA providers because we need a real domain to do that. Which we will see in project 9
 
 * Create self-signed ssl-certs using the bash-script. pass the domain name as argument to the script. The script will create all the certificates and keys we created using the individual commands. The SSL certificate and private keys get named with the domain name you pass as the script argument. For example, bmaddi-devops.com.key & bmaddi-devops.com.crt
 ```
