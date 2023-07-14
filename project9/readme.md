@@ -9,6 +9,8 @@ This is extension of project 7. we have created self signed certicates for acces
 * If the node where you installed nginx has public ip then directly create a DNS A record to point to your public ip.
 * If no, then create a port-forwading rule to 443. i.e created a dns A record which points to public ip of router and the create a port-forwading rule to direct all the traffic to router on 443 to internal node port 443
 
+![Image](https://github.com/bhuvanchandmaddi/DevopsMiniProjects/blob/main/.images/https-portforward.jpg?raw=true)
+
 ## Implementation details
 * Installed required packages
 ```
