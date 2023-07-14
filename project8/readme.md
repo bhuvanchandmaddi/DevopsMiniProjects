@@ -24,3 +24,7 @@ We have already installed it in project seven, we will use that. Access that app
 * So if you want to access the application using domain instead of public ip of the router, just create a DNS A record which should point to router`s public ip
 
 **Note:** But the catch here is the public ip of the router changes frequently. So you need to update the dns record every time when public ip of router gets changed by ISP. You can even static public ip for the network but you need to pay little more price for that
+
+**References:**
+
+Special thanks to [powercert animated videos](https://www.youtube.com/watch?v=2G1ueMDgwxw&t=431s) for such a beautiful explanation. Support them.
