@@ -1,4 +1,4 @@
-# Nginx deployment in kubernetes cluster
+# Nginx deployment in kubernetes cluster using helm charts
 This project contains helm chart, which is used to deploy nginx application in kubernetes cluster and expose it using NodePot service
 
 ## Pre-requisites
