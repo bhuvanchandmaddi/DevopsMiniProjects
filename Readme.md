@@ -66,3 +66,5 @@ We have already installed it in project seven, we will use that. Access that app
 
 ## Project 9
 This is extension of project 7. we have created self signed certicates for accessing nginx application there. Here we will get real certificates from Let`s encrypt for free
+
+**Note**: From project 10, readme info will be available in hashnode. In gitrepo we will gonna see only code snippets,other files etc
