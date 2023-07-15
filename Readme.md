@@ -55,12 +55,14 @@ Accept commands to be executed on all the remote machines at once
 
 Wait for the execution to be completed on all the remote machines 
 
+**Note**: In one of my Devops interviews, I`ve received above six projects as case-study. They asked me to solve any 2 out of 6.
+
 ## Project 7
-Install a sample web application in nginx webserver and map a dummy domain to it by editing hosts file and also trick the browser to accept the certs by installing dummy root ca certs in browser.
+Install a sample web application in nginx webserver and map a dummy domain to it by editing hosts file and also trick the browser to accept the self-signed certs by installing dummy root ca certs in browser.
 
 ## Project 8
 Port-forwarding demo setup. Install nginx on any internal vm(use bridged network, so router thinks it`s just a normal other device on local network).
-We have already installed it in project seven, we will use that. Access that application over the internet usinh public ip or dns name
+We have already installed it in project seven, we will use that. Access that application over the internet using public ip or dns name
 
 ## Project 9
 This is extension of project 7. we have created self signed certicates for accessing nginx application there. Here we will get real certificates from Let`s encrypt for free
